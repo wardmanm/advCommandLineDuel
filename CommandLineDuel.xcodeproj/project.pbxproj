@@ -14,6 +14,7 @@
 		1475464619113E1800D526E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1475464519113E1800D526E0 /* main.m */; };
 		1475464A19113E1800D526E0 /* CommandLineDuel.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1475464919113E1800D526E0 /* CommandLineDuel.1 */; };
 		1475465219113E4900D526E0 /* console.m in Sources */ = {isa = PBXBuildFile; fileRef = 1475465119113E4900D526E0 /* console.m */; };
+		14CFD9421924EE50004CC49B /* ui.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CFD9411924EE50004CC49B /* ui.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		1475464919113E1800D526E0 /* CommandLineDuel.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CommandLineDuel.1; sourceTree = "<group>"; };
 		1475465019113E4200D526E0 /* console.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = console.h; sourceTree = "<group>"; };
 		1475465119113E4900D526E0 /* console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = console.m; sourceTree = "<group>"; };
+		14CFD9401924EE50004CC49B /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		14CFD9411924EE50004CC49B /* ui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ui.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 		1475464719113E1800D526E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14CFD9401924EE50004CC49B /* ui.h */,
+				14CFD9411924EE50004CC49B /* ui.m */,
 				1420430F191AC28500297383 /* player.h */,
 				14204310191AC28500297383 /* player.m */,
 				1420430C191A95BD00297383 /* enemies.h */,
@@ -162,6 +167,7 @@
 				14204311191AC28500297383 /* player.m in Sources */,
 				14204314191AC78500297383 /* battleEngine.m in Sources */,
 				1475464619113E1800D526E0 /* main.m in Sources */,
+				14CFD9421924EE50004CC49B /* ui.m in Sources */,
 				1475465219113E4900D526E0 /* console.m in Sources */,
 				1420430E191A95BD00297383 /* enemies.m in Sources */,
 			);

@@ -10,7 +10,7 @@
 
 
 @interface battleEngine : NSObject
-@property (nonatomic) int damageGen;
-@property (nonatomic) int enemyDamHP;
-
+//@property (nonatomic) int damageGen;
+-(int)enemyDamHP : (int) enemyHP : (NSString *)enemyName;
+-(int)playerDamHP : (int) playerHP : (NSString *)enemyName;
 @end

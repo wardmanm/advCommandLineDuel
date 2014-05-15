@@ -8,13 +8,16 @@
 
 #import "console.h"
 #import "player.h"
+#import "ui.h"
 
 
 @implementation player
 
 -(NSString *)playerName{
+    ui *uiOutput;
+    uiOutput = [[ui alloc] init];
     NSString *playerName;
-    NSLog(@"Welcome to Command Line Duel! \n Please enter your name: \n");
+    [uiOutput welcome];
     playerName = getStringFromConsole();
     return playerName;
 }

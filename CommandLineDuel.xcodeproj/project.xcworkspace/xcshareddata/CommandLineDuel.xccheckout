@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A3A956A5-9725-40B6-8773-BCC0C9E29563</string>
+	<string>4AA6937F-6922-4A59-AE5E-D26EF6C82218</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CommandLineDuel</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FDE66DB0-C2EF-4AF3-ACC1-91E1FCFF63AA</key>
-		<string>https://github.com/wardmanm/iOSCommandLineDueler.git</string>
+		<key>949ED4EB-3E41-47CC-A59F-9E8BA82A8B0F</key>
+		<string>https://github.com/wardmanm/advCommandLineDuel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CommandLineDuel.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FDE66DB0-C2EF-4AF3-ACC1-91E1FCFF63AA</key>
+		<key>949ED4EB-3E41-47CC-A59F-9E8BA82A8B0F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/wardmanm/iOSCommandLineDueler.git</string>
+	<string>https://github.com/wardmanm/advCommandLineDuel.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FDE66DB0-C2EF-4AF3-ACC1-91E1FCFF63AA</string>
+	<string>949ED4EB-3E41-47CC-A59F-9E8BA82A8B0F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FDE66DB0-C2EF-4AF3-ACC1-91E1FCFF63AA</string>
+			<string>949ED4EB-3E41-47CC-A59F-9E8BA82A8B0F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CommandLineDuel</string>
+			<string>commandLineDuelAdvanced</string>
 		</dict>
 	</array>
 </dict>
