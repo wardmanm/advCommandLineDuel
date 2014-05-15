@@ -40,12 +40,16 @@
 //MENU OPTIONS AND CHOICES
 //main menu options
 -(void)mainMenu : (NSString *) enemyName {
-     NSLog(@"\n \n  Type '1' if you'd like to take a swing at %@. Type '2' if you'd like to do nothing.\n \n", enemyName);
+     NSLog(@"\n \n 1. Swing at %@ \n 2. Do nothing. \n \n", enemyName);
 }
 
 //no choice given, error
 -(void)noChoice {
      NSLog(@"You did not choose anything, try again.");
+}
+
+-(void)continueQ {
+    NSLog(@"\n Would you like to play again? \n 1. Yes \n 2. No \n");
 }
 
 //COMBAT SPECIFIC OUTPUT

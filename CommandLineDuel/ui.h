@@ -22,6 +22,7 @@
 //menu options
 -(void)mainMenu : (NSString *) enemyName;
 -(void)noChoice;
+-(void)continueQ;
 
 //combat specific
 -(void)playerSwing : (NSString *)enemyName : (int)damage;

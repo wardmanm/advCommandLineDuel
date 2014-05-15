@@ -27,6 +27,7 @@ int enemyHP; // enemy hitpoints
 
 //other variables
 bool gameOver = false; // is the game over?
+bool running = true; // should the game continue running?
 
 //function called when player takes a swing
 void playerSwing(void){
@@ -61,7 +62,7 @@ void doNothing(void){
     }
 }// END OF DO NOTHING
 
-void mainLoop(void) {
+void playLoop(void) {
     while (!gameOver) {
         int playerChoice = 0; // loop variable to log player choice
         ui *uiOutput;
@@ -80,24 +81,46 @@ void mainLoop(void) {
             [uiOutput noChoice];
         }
     }// END OF WHILE LOOP
-}// END OF MAINLOOP
+}// END OF PLAYLOOP
+
+void continueLoop(void){
+    int playerChoice = 0; // looks for player choice
+    ui *uiOutput;
+    uiOutput = [[ui alloc] init];
+    [uiOutput continueQ];
+    playerChoice = getIntegerFromConsole();
+    if (playerChoice == 1){
+        gameOver = false;
+    } else if (playerChoice == 2) {
+        running = false;
+    } else {
+        [uiOutput noChoice];
+    }
+} // END OF CONTINUELOOP
+
+void generateInitialInfo(void){
+    //calls classes to set up game
+    //generated enemy information
+    enemies *enemy;
+    enemy = [[enemies alloc] init];
+    enemyName = enemy.enemyName;
+    enemyHP = enemy.enemyHP;
+    
+    player *playerInfo;
+    playerInfo = [[player alloc] init];
+    playerHP = playerInfo.playerHP;
+}// END OF GENERATEINITIALINFO
 
 //Main function
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
-        //calls classes to set up game
-        //generated enemy information
-        enemies *enemy;
-        enemy = [[enemies alloc] init];
-        enemyName = enemy.enemyName;
-        enemyHP = enemy.enemyHP;
         
         //generated player information
         player *playerInfo;
         playerInfo = [[player alloc] init];
         playerName = playerInfo.playerName;
-        playerHP = playerInfo.playerHP;
+        generateInitialInfo();
         
         //UI setup
         ui *uiOutput;
@@ -106,9 +129,14 @@ int main(int argc, const char * argv[])
         //Initial Greeting
         [uiOutput greeting: playerName : enemyName : enemyHP : playerHP];
         
-        // calls main loop function
-        mainLoop();
-    }
+        while (running){
+            if (!gameOver){
+                playLoop();
+            } else {
+                generateInitialInfo();
+                continueLoop();
+            }
+        }
+    }// END OF AUTORELEASESPOOL
     return 0;
 }// END OF MAIN
-

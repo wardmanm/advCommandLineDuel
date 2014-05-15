@@ -9,7 +9,6 @@
 #import "battleEngine.h"
 #import "ui.h"
 
-
 @implementation battleEngine
 int whosTurn;
 
